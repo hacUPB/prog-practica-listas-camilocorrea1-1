@@ -1,18 +1,19 @@
 # Ejercicio 1: Suma de elementos en una lista de listas
 def suma_matriz(matriz):
-    """
-    Recibe una lista de listas y devuelve la suma de todos sus elementos.
-    Incluir el código aquí para sumar los elementos de la matriz.
-    """
-    pass
+    suma = 0
+    for fila in matriz:
+        for elemento in fila:
+            suma += elemento
+    return suma
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
 def maximo_matriz(matriz):
-    """
-    Recibe una lista de listas y devuelve el valor máximo.
-    Incluir el código aquí para encontrar el valor máximo en la matriz.
-    """
-    pass
+    maximo = matriz[0][0]
+    for fila in matriz:
+        for elemento in fila:
+            if elemento > maximo:
+                maximo = elemento
+    return maximo
 
 # Ejercicio 3: Verificar si un número es primo
 def es_primo(n):
