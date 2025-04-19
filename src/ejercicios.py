@@ -17,11 +17,23 @@ def maximo_matriz(matriz):
 
 # Ejercicio 3: Verificar si un número es primo
 def es_primo(n):
-    """
-    Recibe un número y devuelve True si es primo, False en caso contrario.
-    Incluir el código aquí para determinar si un número es primo.
-    """
-    pass
+    if n < 2:
+        return False
+    
+    else:
+        primos_basicos = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+        for primo in primos_basicos:
+            if n in primos_basicos:
+                return True
+                break
+            elif n % primo == 0:
+                return False
+                break
+            elif n // primo < primo:
+                return True  
+                break
+
+    
 
 # Ejercicio 4: Transponer una matriz
 def transponer_matriz(matriz):
