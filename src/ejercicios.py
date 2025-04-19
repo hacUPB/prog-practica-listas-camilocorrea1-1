@@ -58,11 +58,12 @@ def filtrar_pares(lista):
 
 # Ejercicio 6: Contar la cantidad de palabras en una frase
 def contar_palabras(frase):
-    """
-    Recibe una frase y devuelve el número de palabras.
-    Incluir el código aquí para contar las palabras en la frase.
-    """
-    pass
+    cont = 0
+    palabra = frase.split()
+    for i in palabra:
+        cont +=1
+    return cont
+
 
 # Ejercicio 7: Crear una tabla de multiplicar
 def tabla_multiplicar(n):
