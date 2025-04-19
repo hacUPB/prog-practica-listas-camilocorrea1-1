@@ -85,11 +85,12 @@ def contar_negativos(lista):
 
 # Ejercicio 9: Determinar si una lista está ordenada
 def lista_ordenada(lista):
-    """
-    Recibe una lista de números y devuelve True si está ordenada de menor a mayor.
-    Incluir el código aquí para verificar si la lista está ordenada.
-    """
-    pass
+    cont = len(lista)-1
+    for i in range(cont):
+        if lista[i] > lista[i+1]:
+            return False
+                 
+    return True
 
 # Ejercicio 10: Cifrar un texto con el cifrado César
 def cifrado_cesar(texto, desplazamiento):
