@@ -81,7 +81,7 @@ def contar_negativos(lista):
     for num in lista:
         if num < 0:
             cont +=1
-    print(cont)
+    return cont
 
 # Ejercicio 9: Determinar si una lista está ordenada
 def lista_ordenada(lista):
