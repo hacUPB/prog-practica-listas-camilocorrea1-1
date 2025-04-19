@@ -77,11 +77,11 @@ def tabla_multiplicar(n):
 
 # Ejercicio 8: Contar números negativos en una lista
 def contar_negativos(lista):
-    """
-    Recibe una lista de números y devuelve la cantidad de números negativos.
-    Incluir el código aquí para contar los números negativos en la lista.
-    """
-    pass
+    cont = 0
+    for num in lista:
+        if num < 0:
+            cont +=1
+    print(cont)
 
 # Ejercicio 9: Determinar si una lista está ordenada
 def lista_ordenada(lista):
