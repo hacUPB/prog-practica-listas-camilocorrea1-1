@@ -67,11 +67,13 @@ def contar_palabras(frase):
 
 # Ejercicio 7: Crear una tabla de multiplicar
 def tabla_multiplicar(n):
-    """
-    Recibe un número y devuelve una lista con su tabla de multiplicar del 1 al 10.
-    Incluir el código aquí para generar la tabla de multiplicar.
-    """
-    pass
+    cont = 1
+    lista_tabla = []
+    while cont <= 10:
+        lista_tabla.append(n*cont)
+        cont += 1
+    return lista_tabla
+
 
 # Ejercicio 8: Contar números negativos en una lista
 def contar_negativos(lista):
