@@ -50,11 +50,11 @@ def transponer_matriz(matriz):
 
 # Ejercicio 5: Filtrar números pares
 def filtrar_pares(lista):
-    """
-    Recibe una lista de números y devuelve una nueva lista con solo los números pares.
-    Incluir el código aquí para filtrar los números pares.
-    """
-    pass
+    lista_par = []
+    for num in lista:
+        if num % 2 == 0:
+            lista_par.append(num)
+    return lista_par
 
 # Ejercicio 6: Contar la cantidad de palabras en una frase
 def contar_palabras(frase):
