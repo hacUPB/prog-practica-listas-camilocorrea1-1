@@ -37,11 +37,16 @@ def es_primo(n):
 
 # Ejercicio 4: Transponer una matriz
 def transponer_matriz(matriz):
-    """
-    Recibe una lista de listas y devuelve la matriz transpuesta.
-    Incluir el código aquí para transponer la matriz.
-    """
-    pass
+    fil = len(matriz)
+    col = len(matriz[0])
+
+    transpuesta = []
+    for j in range(col):
+        nueva_fila = []
+        for i in range(fil):
+            nueva_fila.append(matriz[i][j])
+        transpuesta.append(nueva_fila)
+    return transpuesta
 
 # Ejercicio 5: Filtrar números pares
 def filtrar_pares(lista):
